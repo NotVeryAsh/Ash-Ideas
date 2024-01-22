@@ -29,7 +29,7 @@ export default function BackButton() {
 
         previousLocation = pathArray.join('/');
     }
-
+    console.log(previousLocation)
     return (
         <Button onClick={() => router.push('/' + previousLocation)} classNames={"mr-auto"}>Back</Button>
     );
